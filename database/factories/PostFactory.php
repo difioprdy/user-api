@@ -1,0 +1,27 @@
+<?php
+
+namespace Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+/**
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Post>
+ */
+class PostFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array<string, mixed>
+     */
+    public function definition()
+    {
+        //Factories help generate fake data for testing/seeding.
+        //Faker library generates realistic random names, emails, etc.
+        return [
+            'title' => fake()->sentence(6),
+            'body' => fake()->paragraphs(3, true),
+        
+        ];
+    }
+}
