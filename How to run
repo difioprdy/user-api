@@ -1,0 +1,5 @@
+1. Direct to the folder path
+2. run this in the terminal -> composer install
+3. run the program -> php artisan serve
+
+-Done-
